@@ -26,6 +26,7 @@
 ├── /uploads                 # Storage for uploaded donation images
 │   └── .gitkeep             # Ensures the empty folder is tracked by Git
 ├── .env                     # Private secrets & API keys
+├── .env.example             # Template for .env file
 ├── .gitignore               # List of files to ignore (node_modules, .env)
 ├── package.json             # Dependencies, metadata, and run scripts
 ├── package-lock.json        # Exact version history of dependencies
