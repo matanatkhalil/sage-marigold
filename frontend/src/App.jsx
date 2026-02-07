@@ -12,18 +12,14 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-
-    <div className='flex flex-col min-h-screen justify-between'>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/About" element={<About />} />
-      <Route path="/Login" element={<Login />} />
-    </Routes>
-    <Footer />
-
-   
-
+    <div className='flex flex-col min-h-screen justify-between bg-[#f5f5f5]'>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Login" element={<Login />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
