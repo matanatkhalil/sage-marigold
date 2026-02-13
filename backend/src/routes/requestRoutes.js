@@ -1,4 +1,13 @@
 const express = require('express');
 const router = express.Router();
-// Routes will be defined here
+const { validateJWT } = require('../middlewares/validate-jwt');
+const { createRequest } = require('../controllers/requestController')
+
+router.post(
+    '/application-form',
+    [ validateJWT ],
+    createRequest
+);
+
+
 module.exports = router;
